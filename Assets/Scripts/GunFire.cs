@@ -8,6 +8,7 @@ public class GunFire : MonoBehaviour
 {
 
     [SerializeField] AudioSource gunFire;
+    [SerializeField] Transform rifleTransform;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
@@ -25,7 +26,11 @@ public class GunFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_input.isFiring);       
+        // Debug.Log(_input.isFiring);
+
+        Vector3 viewPointCenter = new Vector3(0.5f, 0.5f, 10f);
+        Vector3 worldPointCenter = Camera.main.ViewportToWorldPoint(viewPointCenter);
+        rifleTransform.LookAt(worldPointCenter);
 
         if (_input.isFiring)
         {
