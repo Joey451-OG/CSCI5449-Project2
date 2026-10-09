@@ -59,10 +59,7 @@ public class GunFire : MonoBehaviour
                     skele.takeDamage(damage);
                 }
             }
-            if (!gunFire.isPlaying)
-            {
-                gunFire.Play();
-            }
+            gunFire.Play();
         }     
     }
 }
