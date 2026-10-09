@@ -8524,10 +8524,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4402477935635820094, guid: 61b3e3801d56a3f429556c96ea2f07d6, type: 3}
-      propertyPath: maxHP
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 5217009034759064855, guid: 61b3e3801d56a3f429556c96ea2f07d6, type: 3}
       propertyPath: m_Controller
       value: 
@@ -8556,9 +8552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunFire
   gunFire: {fileID: 1015450458}
   rifleTransform: {fileID: 1367575845}
-  fireRateInSeconds: 0.08
-  headShotDamage: 10
-  bodyShotDamage: 5
+  fireRateInSeconds: 0.2
 --- !u!1 &2103610303
 GameObject:
   m_ObjectHideFlags: 0
