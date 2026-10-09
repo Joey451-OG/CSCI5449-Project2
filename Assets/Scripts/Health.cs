@@ -6,17 +6,15 @@ public class Health : MonoBehaviour
     [SerializeField] float defaultHP = 100;
     [SerializeField] float maxHP = 0;  
 
-    private float _hp;    
+    private float _hp;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+
        if (maxHP == 0)
         {
             maxHP = defaultHP;
         }
-
         _hp = defaultHP;
     }
 

@@ -19,7 +19,6 @@ public class GunFire : MonoBehaviour
     private StarterAssetsInputs _input;
     private float _nextFire;
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
